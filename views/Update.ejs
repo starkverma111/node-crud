@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-color: whitesmoke;
+        font-family: 'Raleway', sans-serif;
+      }
+      </style>
+    <title>Update Data</title>
+  </head>
+  <body>
+    <div class="container mt-2" style="width:40%;">
+      <h1 class="p-2 mt-4 text-center">Update Data using Node js</h1>
+      <hr/>
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" name="id" value="<%=(typeof editData!='undefined')? editData.id:''%>" disabled>
+              
+              </div>    
+            <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" class="form-control" name="name" value="<%=(typeof editData!='undefined')? editData.name:''%>">
+                
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="text" class="form-control" name="email" value="<%=(typeof editData!='undefined')? editData.email:''%>">
+                
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Message</label>
+                  <input type="text" class="form-control" name="message" value="<%=(typeof editData!='undefined')? editData.message:''%>">
+                
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+        </form>		
+        <br/><br/></div>
+  
+    <td></td>
+   
+  
+
+</body>
+</html>
